@@ -14,12 +14,16 @@ export const Container = styled.View.attrs({
   height: 80px;
 `;
 
-export const Logo = styled.Image.attrs({
+export const Logo = styled.TouchableWithoutFeedback`
+  width: 220px;
+`;
+
+export const LogoImage = styled.Image.attrs({
   source: logo,
-  resizeMode: 'cover',
+  resizeMode: 'contain',
 })`
-  width: 185px;
-  height: 24px;
+  width: 220px;
+  height: 30px;
 `;
 
 export const BasketContainer = styled.TouchableOpacity`
