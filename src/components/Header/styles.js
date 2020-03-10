@@ -3,17 +3,15 @@ import colors from '../../styles/colors';
 
 import logo from '../../assets/logo.png';
 
-export const Wrapper = styled.SafeAreaView`
-  flex: 0;
-  background: ${colors.dark};
+export const Container = styled.View.attrs({
+  elevation: 2,
+})`
   flex-direction: row;
-`;
-
-export const Container = styled.View`
-  flex-direction: row;
-  flex: 1;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 0 20px;
+  background: ${colors.dark};
+  height: 80px;
 `;
 
 export const Logo = styled.Image.attrs({
