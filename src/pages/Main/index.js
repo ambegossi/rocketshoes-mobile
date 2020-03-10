@@ -59,7 +59,7 @@ export default class Main extends Component {
     return (
       <Container>
         <FlatList
-          horizontal
+          vertical
           data={products}
           keyExtractor={item => String(item.id)}
           renderItem={this.renderProduct}

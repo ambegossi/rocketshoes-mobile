@@ -9,14 +9,15 @@ export const Container = styled.View`
 
 export const Product = styled.View`
   background: #fff;
-  padding: 10px;
+  flex: 1;
+  padding: 20px;
   margin: 15px;
   border-radius: 4px;
-  width: 220px;
-  height: 380px;
+  min-height: 350px;
 `;
 
 export const ProductImage = styled.Image`
+  align-self: center;
   height: 200px;
   width: 200px;
 `;
