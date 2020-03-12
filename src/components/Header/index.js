@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -13,7 +14,7 @@ import {
 
 import NavigationService from '../../services/navigation';
 
-function Header({ navigation, cartSize }) {
+function Header({ cartSize }) {
   return (
     <Container>
       <Logo onPress={() => NavigationService.navigate('Main')}>
@@ -26,6 +27,10 @@ function Header({ navigation, cartSize }) {
     </Container>
   );
 }
+
+Header.propTypes = {
+  cartSize: PropTypes.number.isRequired,
+};
 
 export default connect(
   state => ({

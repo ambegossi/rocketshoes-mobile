@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -22,9 +23,10 @@ import {
 } from './styles';
 
 class Main extends Component {
-  state = {
-    products: [],
-  };
+  constructor(props) {
+    super(props);
+    this.state = { products: [] };
+  }
 
   componentDidMount() {
     this.getProducts();
@@ -80,6 +82,11 @@ class Main extends Component {
     );
   }
 }
+
+Main.propTypes = {
+  addToCartRequest: PropTypes.func.isRequired,
+  amount: PropTypes.object.isRequired,
+};
 
 const mapStateToProps = state => ({
   amount: state.cart.reduce((amount, product) => {
