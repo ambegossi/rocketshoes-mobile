@@ -49,7 +49,10 @@
 
 ## About
 
-[GoStack Bootcamp Challenge 7 🚀👨🏻‍🚀](https://github.com/Rocketseat/bootcamp-gostack-desafio-07)
+[GoStack Bootcamp Challenge 7 🚀👨🏻‍🚀](https://github.com/Rocketseat/bootcamp-gostack-desafio-07)<br/>
+&
+<br />
+[GoStack Bootcamp Challenge 8 🚀👨🏻‍🚀](https://github.com/Rocketseat/bootcamp-gostack-desafio-08)
 
 <p align="center">
   <img alt="Rocketshoes" src=".github/rocketshoes.gif" height="500" >
@@ -62,6 +65,7 @@ This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketse
 - [React Native](https://reactnative.dev/)
 - [Redux](https://redux.js.org/)
 - [Redux-Saga](https://redux-saga.js.org/)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [React Navigation](https://reactnavigation.org/)
 - [Axios](https://github.com/axios/axios)
 - [Immer](https://github.com/immerjs/immer)
