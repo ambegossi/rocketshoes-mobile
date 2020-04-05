@@ -16,7 +16,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', 'react-hooks'],
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
@@ -30,5 +30,8 @@ module.exports = {
     'react/forbid-prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
     'no-console': ['error', { allow: ['tron'] }],
+
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   },
 };
